@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+nav {
+background-color: #333;
+color: #fff;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+margin-bottom: 40px;
+}
+
+.logo img {
+width: 4em;
+height: auto;
+}
+
+.Nombre {
+font-size: 2.5em;
+flex-grow: 1;
+text-align: center;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+padding: 0;
+}
+
+nav li {
+margin: 0 10px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.cta {
+margin-right: 20px;
+}
+
+.btn {
+display: inline-block;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 16px;
+font-weight: bold;
+text-transform: uppercase;
+text-decoration: none;
+transition: background-color 0.2s;
+}
+
+.btn-primary {
+background-color: #ff9900;
+color: #fff;
+}
+
+.btn-primary:hover {
+background-color: #ffcc66;
+}
+
+@media screen and (max-width: 768px) {
+nav ul {
+  margin-right: 0;
+}
+
+.cta {
+  display: none;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+label {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+select {
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffcc66;
+}
+  
+  #resultados table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  #resultados th,
+  #resultados td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #resultados th {
+    background-color: #f2f2f2;
+    font-weight: normal;
+  }
+
+}
